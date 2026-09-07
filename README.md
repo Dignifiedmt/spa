@@ -17,10 +17,10 @@ This project includes [`netlify.toml`](netlify.toml), so Netlify can build and s
 
 - Build command: `npm run build`
 - Publish directory: `dist`
-- Base directory: `codveda/spa` when deploying from the repository root
+- Base directory: `.` (root directory - no subdirectory needed)
 
-When creating the site in Netlify, set the base directory to `codveda/spa` if this folder is part of a larger repository. Netlify will install the dependencies, run the build, and apply the SPA redirect needed for direct visits to `/about` and `/contact`.
+When creating the site in Netlify, leave the base directory empty or set it to `.` since this is a standalone repository. Netlify will install the dependencies, run the build, and apply the SPA redirects from the `netlify.toml` configuration.
 
 ## Expanding the Oxlint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for reference.
